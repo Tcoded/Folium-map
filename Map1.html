@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_e76d499aa4c14d639e9e8fbaefc64fcf {
+                #map_c66673b3b0234f8799e90d8eb2669508 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_e76d499aa4c14d639e9e8fbaefc64fcf" ></div>
+            <div class="folium-map" id="map_c66673b3b0234f8799e90d8eb2669508" ></div>
         
 </body>
 <script>    
     
-            var map_e76d499aa4c14d639e9e8fbaefc64fcf = L.map(
-                "map_e76d499aa4c14d639e9e8fbaefc64fcf",
+            var map_c66673b3b0234f8799e90d8eb2669508 = L.map(
+                "map_c66673b3b0234f8799e90d8eb2669508",
                 {
                     center: [37.34, -121.89],
                     crs: L.CRS.EPSG3857,
@@ -56,9 +56,34 @@
 
         
     
-            var tile_layer_0ebce4e6b90345ff9d16488992825f58 = L.tileLayer(
+            var tile_layer_4e76e5b6ad1f4f4d83eee661d1293cb7 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_e76d499aa4c14d639e9e8fbaefc64fcf);
+            ).addTo(map_c66673b3b0234f8799e90d8eb2669508);
         
+    
+            var marker_5d19abab4da94e56a126d766fbff54d7 = L.marker(
+                [37.44, -122.14],
+                {}
+            ).addTo(map_c66673b3b0234f8799e90d8eb2669508);
+        
+    
+            var icon_18490f79962648d3bb80a2e0141752d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5d19abab4da94e56a126d766fbff54d7.setIcon(icon_18490f79962648d3bb80a2e0141752d0);
+        
+    
+        var popup_cc9d2e28494f41a49755f1291da6dcb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_109f259782b2455cb2e1ec0360120aac = $(`<div id="html_109f259782b2455cb2e1ec0360120aac" style="width: 100.0%; height: 100.0%;">Palo Alto, CA</div>`)[0];
+            popup_cc9d2e28494f41a49755f1291da6dcb3.setContent(html_109f259782b2455cb2e1ec0360120aac);
+        
+
+        marker_5d19abab4da94e56a126d766fbff54d7.bindPopup(popup_cc9d2e28494f41a49755f1291da6dcb3)
+        ;
+
+        
+    
 </script>
